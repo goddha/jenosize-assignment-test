@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: Jenosize Assignment
+  description: |-
+    this is a swagger for 1st Jenosize assignment.    
+
+    Set up instruction.
+    - install dependacies with - _npm install_
+    - run development server with -  _npm run dev_
+    - then run each API with example data or by manualy edit each value in request body
+  contact:
+    name: 'Guntapon Jaisonthi'
+    email: 'goddha@outlook.com'
+  version: 'test'
+servers:
+  - url: http://localhost:8080
+    description: Development server
+paths:
+  /getProduct:
+    get:
+      tags:
+        - fetch data
+      summary: return all products
+      description: return all products
+      responses:
+        '200':
+          description: 'OK'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+  /createProduct:
+    post:
+      tags:
+        - add new data
+      summary: add new product to database
+      description: add new product to database
+      requestBody:
+        description: create new product in database
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/product'
+      responses:
+        '200':
+          description: 'OK'
+        '400':
+          description: 'invalid input'
+
+components:
+  schemas:
+    product:
+      type: object
+      properties:
+        name:
+          type: string
+          description: product name
+          example: 't-shirt'
+        price:
+          type: number
+          description: product price
+          example: 199
+        stock:
+          type: number
+          description: product stock quantity
+          example: 5000
+        description:
+          type: string
+          description: product description
+          example: ''
