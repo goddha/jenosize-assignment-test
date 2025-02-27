@@ -16,14 +16,6 @@ I have created two projects for this assignment which is the API and Front-end
 - server will run at `http://localhost:3000`
 
 ### Route
+swagger.yaml also include in test-node folder
 - get `/getProduct` to get product list
 - post `/createProduct` to create a new product
-
-### Tools Usage
-- Node JS
-- Express JS
-- MongoDB
-- CORS
-- Nodemon
-- Next JS
-- Tailwind CSS
