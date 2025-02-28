@@ -3,6 +3,7 @@
 I have created two projects for this assignment which is the API and Front-end 
 
 ### API
+express js connect with online MongoDB server
 - locate folder `test-node`
 - run `npm install`
 - run `npm run dev`
@@ -10,6 +11,7 @@ I have created two projects for this assignment which is the API and Front-end
 
 
 ### Front-end
+simple Next JS frontend
 - locate folder `test-front`
 - run `npm install`
 - run `npm run dev`
