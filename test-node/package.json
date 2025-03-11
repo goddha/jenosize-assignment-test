@@ -4,7 +4,7 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodeDev": "nodemon scripts.js"
+    "dev": "nodemon scripts.js"
   },
   "keywords": [],
   "author": "",
